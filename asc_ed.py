@@ -25,5 +25,6 @@ if __name__ == '__main__':
             # print(ASCfile.columns)
             # print(ASCfile.iloc[0:, 1:4])  # 行，列 = [:, :]
             # print(ASCfile)
+            # 剔除第一列
             ASCfile = ASCfile.iloc[0:, 1:4]
             ASCfile.to_csv(path + os.sep + "ed/" + i, index=False, header=False, sep=' ')
