@@ -17,6 +17,7 @@ if __name__ == '__main__':
     # 获取该目录下所有文件，存入列表中
     fileList = os.listdir(path)
     for i in fileList:
+        # 判断是否是asc文件
         if i.endswith(".asc"):
             filepath = path + os.sep + i
             ASCfile = pd.read_csv(filepath, skiprows=0, encoding="gbk", engine='python', sep=' ', delimiter=None,
