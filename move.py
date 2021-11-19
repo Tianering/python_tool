@@ -10,13 +10,13 @@
 import os
 import shutil
 
-dir_path = "/home/data/temp_826_b/IR/"
+dir_path = "/home/shanyi/data/temp_826_b/IR/"
 dir_list = os.listdir(dir_path)
-strs = ["disp", "depth", "point"]
+strs = ["disp", "depth", "points"]
 for str in strs:
     for dir in dir_list:
         temper_dir = os.path.join(dir_path, dir)
-        if os.path.isdir(dir):
+        if os.path.isdir(temper_dir):
             for file in os.listdir(temper_dir):
                 file_path = os.path.join(temper_dir, file)
                 temp_path = os.path.join(temper_dir, str)
